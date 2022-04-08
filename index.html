@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="style/global.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script/index.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="leftNav">
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="middle">
+            <button class="hom">
+                <i class="fa-solid fa-house"></i>
+            </button>
+            <button class="route">
+                <i class="fa-solid fa-route"></i>
+            </button>
+            <button class="folder">
+                <i class="fa-solid fa-folder"></i>
+            </button>
+            <button class="circle">
+                <i class="fa-solid fa-circle"></i>
+            </button>
+            <button class="circle">
+                <i class="fa-solid fa-circle"></i>
+            </button>
+            <button class="circle">
+                <i class="fa-solid fa-circle"></i>
+            </button>
+            <button class="circle">
+                <i class="fa-solid fa-circle"></i>
+            </button>
+            <button class="circle">
+                <i class="fa-solid fa-circle"></i>
+            </button>
+            <button class="circle">
+                <i class="fa-solid fa-circle"></i>
+            </button>
+            <button class="calendar">
+                <i class="fa-solid fa-calendar"></i>
+            </button>
+
+            <div class="separator"></div>
+
+            <button class="upload">
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </button>
+            <button class="briefcase">
+                <i class="fa-solid fa-briefcase"></i>
+            </button>
+            <button class="chart">
+                <i class="fa-solid fa-chart-column"></i>
+            </button>
+            <button class="book">
+                <i class="fa-solid fa-book-blank"></i>
+            </button>
+
+            <div class="separator"></div>
+
+            <button class="newspaper">
+                <i class="fa-solid fa-newspaper"></i>
+            </button>
+            <button class="envelope">
+                <i class="fa-solid fa-envelope"></i>
+                <div class="badge"></div>
+            </button>
+            <button class="user">
+                <i class="fa-solid fa-user-gear"></i>
+            </button>
+        </div>
+        <div class="down">
+            <button class="info">
+                <i class="fa-solid fa-circle-info"></i>
+            </button>
+        </div>
+    </div>
+    <div class="wrapper">
+        <nav class="topNav">
+            <div class="left">
+                <div class="search_bar_div">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" class="search_bar" placeholder="Rechercher"></input>
+                </div>
+            </div>
+            <div class="right">
+                <button class="fast_create">
+                    <i class="fa-regular fa-plus"></i>
+                </button>
+                <button class="notification">
+                    <i class="fa-regular fa-bell"></i>
+                    <span class="badge"></span>
+                </button>
+                <button class="annuaire">
+                    <i class="fa-solid fa-user-group"></i>
+                </button>
+                <button class="langue">
+                    <img src="img/france.png">
+                </button>
+                <button class="profil"><img src="img/profil.png">
+                    <div class="text">Lorem ipsum<i class="fa-solid fa-chevron-down"></i></div>
+                </button>
+
+            </div>
+        </nav>
+        <nav class="bottomNav">
+            <div class="left">
+                <button class="home">
+                    <i class="fa-solid fa-house"></i>
+                </button>
+                <a class="link"><i class="fa-solid fa-circle"></i>Consulter les projets<a>
+                        <a class="link"><i class="fa-solid fa-circle"></i>application des gestions<a>
+            </div>
+            <div class="right">
+                <a class="link">Details</a>
+                <a class="link">Expression des besoins</a>
+                <a class="link">Product backing</a>
+                <a class="link">Sprint Board</a>
+                <a class="link">Task Board</a>
+                <button class="plus">Plus<i class="fa-solid fa-chevron-down"></i></button>
+            </div>
+        </nav>
+        <div class="content">
+            <!--Product Backlog---------------------------------------------------------------->
+            <div class="productBacklog">
+                <div class="grid1">
+                    <h3>Product Backlog</h3>
+                    <p>3 user stories</p>
+                    <div class="search_bar_div">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" class="search_bar2" placeholder="Rechercher"></input>
+                    </div>
+                </div>
+                <div class="grid2">
+                    <button class="more_element">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </button>
+                </div>
+                <div class="grid3">
+                    <button class="goBack">
+                        <i class="fa-solid fa-angles-left"></i>
+                    </button>
+                </div>
+                <div class="grid4">
+                    <div class="stories">
+                        <h4>Récent</h4>
+                        <div class="story">
+                            <div class="grid1">
+                                <input class="check" type="checkbox">
+                                <div class="point">Story point : 9</div>
+                            </div>
+                            <div class="grid2">
+                                <div class="version">-MVP</div>
+                            </div>
+                            <div class="grid3">
+                                <div class="description">
+                                    US011. Mettre à jour la charte graphique sur les supports print.
+                                </div>
+                                <div class="level">Très forte</div>
+                                <div class="tag">#tag</div>
+                                <div class="icons">
+                                    <i class="fa-solid fa-message">
+                                        <div>10</div>
+                                    </i><i class="fa-solid fa-arrow -down"></i>
+                                    <button class="more_element">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="story">
+                            <div class="grid1">
+                                <input type="checkbox">
+                                <div class="point"><i class="fa-solid fa-play"></i>Story point : 9</div>
+                            </div>
+                            <div class="grid2">
+                                <div class="version">-MVP</div>
+                            </div>
+                            <div class="grid3">
+                                <div class="description">
+                                    US001. En tant que client, je souhaite mettre en favoris certains projets.
+                                </div>
+                                <div class="level">Forte</div>
+                                <div class="tag">#lorem ipsum</div>
+                                <div class="icons">
+                                    <i class="fa-solid fa-list">
+                                        <div>5</div>
+                                    </i>
+                                    <i class="fa-solid fa-paperclip">
+                                        <div>2</div>
+                                    </i> <i class="fa-solid fa-message">
+                                        <div>10</div>
+                                    </i><i class="fa-solid fa-arrow-down"></i>
+                                    <button class="more_element">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stories">
+                        <h4>il ya 1 semaine</h4>
+                        <div class="story">
+                            <div class="grid1">
+                                <input class="check" type="checkbox">
+                                <div class="point">Story point : 9</div>
+                            </div>
+                            <div class="grid2">
+                                <div class="version">-Release 1</div>
+                            </div>
+                            <div class="grid3">
+                                <div class="description">
+                                    US011. Mettre à jour la charte graphique sur les supports print.
+                                </div>
+                                <div class="level">Faible</div>
+                                <div class="tag">#lorem ipsum</div>
+                                <div class="icons"><i class="fa-solid fa-comment-medical"></i><i
+                                        class="fa-solid fa-arrow-down"></i>
+                                    <button class="more_element">
+                                        <i class="fa-solid fa-ellipsis"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!--Sprint planning---------------------------------------------------------------->
+            <div class="sprintPlanning">
+                <div class="header">
+                    <div class="head left1">
+                        <div class="title">Sprint planning</div>
+                        <div class="date">modifé le 20 nov. 2021</div>
+                        <div class="participant">
+                            <img class="userImg" src="img/profil.png" alt="">
+                            <img class="userImg" src="img/profil.png" alt="">
+                            <img class="userImg" src="img/profil.png" alt="">
+                            <div class="extraUser">+3</div>
+                            <i class="fa-regular fa-star"></i> <br>
+                            <div class="description">Développer les coopérations avec les acteurs du territoire, de
+                                l’archipel à la
+                                Caraibe <span>- P01. Application de gestion de projets</span></div>
+
+                        </div>
+                    </div>
+                    <div class="head right1">
+                        <div class="dropDown">
+                            <div>
+                                <button id="new" class="btn generic_btn">Nouveau<i
+                                        class="fa-solid fa-chevron-down"></i></button>
+                            </div>
+                            <div id="newContent" class="dropDownContent">
+                                <div id="newSprint"><i class="fa-solid fa-border-all"></i>Sprint</div>
+                                <div id="newUserStory"><i class="fa-solid fa-clipboard"></i>User story</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="options">
+                    <div class="option search_bar_div">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" class="search_bar2" placeholder="Rechercher"></input>
+                    </div>
+                    <div class="option">
+                        Périmètre<button class="filter">Tous<i class="fa-solid fa-chevron-down"></i></button>
+                    </div>
+                    <div class="option">
+                        Catégorie<button class="filter">Toute<i class="fa-solid fa-chevron-down"></i></button>
+                    </div>
+                    <div class="option">
+                        Priorité <button class="filter">Toute<i class="fa-solid fa-chevron-down"></i></button>
+                    </div>
+                    <button class="more_element">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </button>
+                    <!-- sprint backlog-->
+                    <div class="sprintContent">
+                        <!--sprint Backlog-->
+                        <div class="content sprintBacklog">
+                            <div class="header">
+                                <div class="title2"><button class="plus">Sprint backlog<i
+                                            class="fa-solid fa-chevron-down"></i></button>
+                                </div>
+                                <div class="storyNb">4 user stories</div>
+                            </div>
+                            <div class="stories">
+                                <div class="date">Le 20 nov .2021</div>
+                                <div class="story">
+                                    <div class="upInfo">
+                                        <i class="fa-solid fa-play"></i>
+                                        <div class="level">Faible</div>
+                                        <div class="point">Story point : 9</div>
+                                        <div class="version">-Bug</div>
+                                    </div>
+
+                                    <div class="description">US003. En tant que chef de projet, je souhaite inviter des
+                                        contributeurs externes sur une tâche.</div>
+                                    <div class="downInfo">
+                                        <div class="tag">#tag</div>
+                                        <div class="icons">
+                                            <i class="fa-solid fa-list">
+                                                <div>5</div>
+                                            </i>
+                                            <i class="fa-solid fa-message">
+                                                <div>10</div>
+                                            </i>
+                                            <button class="more_element">
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="story">
+                                    <div class="upInfo">
+                                        <i class="fa-solid fa-play"></i>
+                                        <div class="level">Très forte</div>
+                                        <div class="point">Story point : 9</div>
+                                        <div class="version">-MVP</div>
+                                    </div>
+
+                                    <div class="description">US005. En tant que client, je souhaite faire des demandes
+                                        personnalisées.</div>
+                                    <div class="downInfo">
+                                        <div class="tag">#lorem ipsum</div>
+                                        <div class="icons">
+                                            <i class="fa-solid fa-list">
+                                                <div>5</div>
+                                            </i>
+                                            <i class="fa-solid fa-message">
+                                                <div>10</div>
+                                            </i>
+                                            <button class="more_element">
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                            <div class="stories">
+                                <div class="date">Le 20 nov .2021</div>
+                                <div class="story">
+                                    <div class="upInfo">
+                                        <i class="fa-solid fa-play"></i>
+                                        <div class="level">Faible</div>
+                                        <div class="point">Story point : 5</div>
+                                        <div class="version">-Bug</div>
+                                    </div>
+
+                                    <div class="description">US012. Supprimer le bouton du compte rendu d’activité
+                                        présent dans la saisie des temps.</div>
+                                    <div class="downInfo">
+                                        <div class="tag">#tag</div>
+                                        <div class="icons">
+                                            <button class="more_element">
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="story">
+                                    <div class="upInfo">
+                                        <i class="fa-solid fa-play"></i>
+                                        <div class="level">Moyenne</div>
+                                        <div class="point">Story point : 9</div>
+                                        <div class="version">-Release 1</div>
+                                    </div>
+
+                                    <div class="description">US006. En tant que client, je souhaite faire des demandes
+                                        personnalisées.</div>
+                                    <div class="downInfo">
+                                        <div class="tag">#lorem ipsum</div>
+                                        <div class="icons">
+                                            <i class="fa-solid fa-list">
+                                                <div>5</div>
+                                            </i>
+                                            <i class="fa-solid fa-message">
+                                                <div>10</div>
+                                            </i>
+                                            <button class="more_element">
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Sprints-->
+                        <div class="sprints">
+                            <div class="sprint">
+                                <div class="header">
+                                    <div class="left">
+                                        <div class="title3">
+                                            <button class="plus">Sprint 1 : 1ère itération<i
+                                                    class="fa-solid fa-chevron-down"></i></button>
+                                        </div>
+                                        <div class="date">Du 7 jan 2021 au 2à janv 2021 (2 semaines)</div>
+                                        <div class="storyNb">3 user stories</div>
+                                    </div>
+                                    <div class="right">
+                                        <button class="start">
+                                            <i class="fa-solid fa-play"></i>Lancer
+                                        </button>
+                                        <div class="icons">
+                                            <i class="fa-solid fa-chart-column"></i>
+                                            <i class="fa-solid fa-calendar"></i>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="story">
+                                    <table>
+                                        <tr>
+                                            <th class="task">
+                                                <div>
+                                                    User Stories & Tâches
+                                                </div>
+                                                <div class="speed">
+                                                    Vélocité moyenne:8
+                                                </div>
+                                            </th>
+                                            <th class="delay">Délais</th>
+                                        </tr>
+
+                                        <td class="task">
+                                            <div class="upInfo">
+                                                <i class="fa-solid fa-play"></i>
+                                                <div class="level">Faible</div>
+                                                <div class="point">
+                                                    Story point: 9
+                                                </div>
+                                                <div class="version">
+                                                    -Release 1
+                                                </div>
+                                            </div>
+                                            <div class="downInfo">
+                                                <div class="description">
+                                                    US002. En tant que client, je souhaite organiser le menu selon
+                                                    mes préférences.
+                                                </div>
+                                                <div class="tag">
+                                                    #tag
+                                                </div>
+                                                <div class="icons">
+                                                    <i class="fa-solid fa-list">
+                                                        <div>5</div>
+                                                    </i>
+                                                    <i class="fa-solid fa-message">
+                                                        <div>6</div>
+                                                    </i>
+                                                    <button class="more_element">
+                                                        <i class="fa-solid fa-ellipsis"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="delay">
+                                            S
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="task">
+                                                <div class="upInfo">
+                                                    <i class="fa-solid fa-play"></i>
+                                                    <div class="level">Très forte</div>
+                                                    <div class="point">
+                                                        Story point: 10
+                                                    </div>
+                                                    <div class="version">
+                                                        -Bug
+                                                    </div>
+                                                </div>
+                                                <div class="downInfo">
+                                                    <div class="description">
+                                                        IN001. Mettre à jour la charte graphique sur les supports print.
+                                                    </div>
+                                                    <div class="tag">
+                                                        #tag
+                                                    </div>
+                                                    <div class="icons">
+
+                                                        <i class="fa-solid fa-paperclip">
+                                                            <div>5</div>
+                                                        </i>
+                                                        <i class="fa-solid fa-message">
+                                                            <div>6</div>
+                                                        </i>
+                                                        <button class="more_element">
+                                                            <i class="fa-solid fa-ellipsis"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="delay">L</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="task">
+                                                <div class="upInfo">
+                                                    <i class="fa-solid fa-play"></i>
+                                                    <div class="level">Moyenne</div>
+                                                    <div class="point">
+                                                        Story point: 7
+                                                    </div>
+                                                    <div class="version">
+                                                        -Mvp
+                                                    </div>
+                                                </div>
+                                                <div class="downInfo">
+                                                    <div class="description">
+                                                        US010. En tant que client, je souhaite organiser la navigation
+                                                        selon mes préférences.
+                                                    </div>
+                                                    <div class="tag">
+                                                        #tag
+                                                    </div>
+                                                    <div class="icons">
+                                                        <i class="fa-solid fa-list">
+                                                            <div>2</div>
+                                                        </i>
+                                                        <i class="fa-solid fa-paperclip">
+                                                            <div>3</div>
+                                                        </i>
+                                                        <i class="fa-solid fa-message">
+                                                            <div>6</div>
+                                                        </i><i class="fa-solid fa-arrow-down"></i>
+                                                        <button class="more_element">
+                                                            <i class="fa-solid fa-ellipsis"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="delay">
+                                                M
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="addStory"><i class="fa-solid fa-plus"></i> User story dans sprint 1</div>
+                            </div>
+                            <div class="sprint">
+                                <div class="header">
+                                    <div class="left">
+                                        <div class="title3">
+                                            <button class="plus">Sprint 1 : 1ère itération<i
+                                                    class="fa-solid fa-chevron-down"></i></button>
+                                        </div>
+                                        <div class="date">Du 7 jan 2021 au 2à janv 2021 (2 semaines)</div>
+                                        <div class="storyNb">3 user stories</div>
+                                    </div>
+                                    <div class="right">
+                                        <button class="start">
+                                            <i class="fa-solid fa-play"></i>Lancer
+                                        </button>
+                                        <div class="icons">
+                                            <i class="fa-solid fa-chart-column"></i>
+                                            <i class="fa-solid fa-calendar"></i>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="story">
+                                    <table>
+                                        <tr>
+                                            <th class="task">
+                                                <div>
+                                                    User Stories & Tâches
+                                                </div>
+                                                <div class="speed">
+                                                    Vélocité moyenne:8
+                                                </div>
+                                            </th>
+                                            <th class="delay">Délais</th>
+                                        </tr>
+
+                                        <td class="task">
+                                            <div class="upInfo">
+                                                <i class="fa-solid fa-play"></i>
+                                                <div class="level">Faible</div>
+                                                <div class="point">
+                                                    Story point: 9
+                                                </div>
+                                                <div class="version">
+                                                    -Release 1
+                                                </div>
+                                            </div>
+                                            <div class="downInfo">
+                                                <div class="description">
+                                                    US002. En tant que client, je souhaite organiser le menu selon
+                                                    mes préférences.
+                                                </div>
+                                                <div class="tag">
+                                                    #tag
+                                                </div>
+                                                <div class="icons">
+                                                    <i class="fa-solid fa-list">
+                                                        <div>5<div< /i>
+                                                                <i class="fa-solid fa-message">
+                                                                    <div>6</div>
+                                                                </i>
+                                                                <button class="more_element">
+                                                                    <i class="fa-solid fa-ellipsis"></i>
+                                                                </button>
+                                                        </div>
+                                                </div>
+                                        </td>
+                                        <td class="delay">
+                                            S
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="task">
+                                                <div class="upInfo">
+                                                    <i class="fa-solid fa-play"></i>
+                                                    <div class="level">Très forte</div>
+                                                    <div class="point">
+                                                        Story point: 10
+                                                    </div>
+                                                    <div class="version">
+                                                        -Bug
+                                                    </div>
+                                                </div>
+                                                <div class="downInfo">
+                                                    <div class="description">
+                                                        IN001. Mettre à jour la charte graphique sur les supports print.
+                                                    </div>
+                                                    <div class="tag">
+                                                        #tag
+                                                    </div>
+                                                    <div class="icons">
+
+                                                        <i class="fa-solid fa-paperclip">5</i> <i
+                                                            class="fa-solid fa-message">
+                                                            <div>6</div>>
+                                                        </i>
+                                                        <button class="more_element">
+                                                            <i class="fa-solid fa-ellipsis"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="delay">L</td>
+                                        </tr>
+
+                                    </table>
+                                </div>
+                                <div class="addStory"><i class="fa-solid fa-plus"></i> User story dans sprint 1</div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal">
+            <div class="up">
+                <div class="left">
+                    <h1>Ajouter un sprint au Sprint Planning</h1>
+                    <h2>projet Mise en place d'une soludtion de GED</h2>
+                </div>
+                <div class="right">
+                    <i id="close" class="fa-solid fa-x"></i>
+                </div>
+            </div>
+            <div class="down">
+                <div class="forms">
+                    <form>
+                        <div class="leftForm">
+                            <div class="l lbSp">
+                                <label class="required" id="lbsprint" for="sprint">libellé court du sprint </label>
+                                <div> 23|<b>30</b></div>
+                            </div>
+                            <input class="l" id="sprint" name="sprint" type="text" required>
+                            <label class="l" for="lbDescription">Description</label>
+                            <input class="l" id="description" name="description" type="text">
+                            <div class="l date">
+                                <h1>
+                                    Sprint 3 : Lorem ipsum lorem ipsum
+                                </h1>
+                                <h2>
+                                    Du 5 fev. 2021 au -
+                                </h2>
+                            </div>
+                            <div id="addRiskBtn" class="l addRisk">
+                                <i class="fa-solid fa-plus"></i>
+                                <div >Ajouter des risques</div>
+                            </div>
+                        </div>
+                        <div class="separator">
+
+                        </div>
+                        <div class="rightForm">
+                            <label class="l required" id="lbPeriod" for="period">période du sprint</label>
+                            <select id="period" class="l" name="pets" id="pet-select">
+                                <option >1er trimestre</option>
+                            </select>
+
+                            <label class="l required" id="lbDuree " for="duree">Durée</label>
+                            <div class="dureeContainer">
+                                <div id="dureeType">
+                                    <p>
+                                        semaines
+                                    </p>
+                                </div>
+                                <input placeholder="-" class="l" id="duree" name="duree" type="number">
+                            </div>
+                            <label class="l" id="lbVelocity" for="velocity">Vélocité maximale envisagée</label>
+                            <input class="l" id="velocity" name="velocity" type="number">
+                        </div>
+                        <div id="advForm" class="downForm">
+                            <div class="up2">
+                                <h2><i class="fa-solid fa-circle-exclamation"></i>Risques</h2>
+                                <div>
+                                    <div class="riskNb">2 risques</div>
+                                    <div class="checkList">Checklist des risques</div>
+                                </div>
+                            </div>
+                            <div class="down2">
+                                <table>
+                                    <tr class="one">
+                                        <th>Réference & Libellé</th>
+                                        <th>Probabilité</th>
+                                        <th>Gravité</th>
+                                        <th>Etat du dernier suivi</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                    <tr class="two">
+                                        <td>
+                                            <div id="ref">REF0001</div>
+                                            <div id="libelle">Problème de financement</div>
+                                        </td>
+                                        <td>
+                                            <select id="probabilite" class="l" name="pets" id="pet-select">
+                                                <option>Rare</option>
+                                            </select>
+                                        </td>
+                                        <td class="three">
+                                            <select id="gravite" class="l" name="pets" id="pet-select">
+                                                <option class="level">Très grave</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <div id="etat">
+                                                <select id="select_etat" class="l" name="pets" id="pet-select">
+                                                    <option>En légère hausse</option>
+                                                </select>
+                                                <div id="clock"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                                                <div class="date">15/04/2020</div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <i class="fa-solid fa-scale-balanced"></i>
+                                        </td>
+                                    </tr>
+                                    <tr class="three">
+                                        <td>
+                                            <select id="select_risk" class="l" name="pets" id="pet-select">
+                                                <option >Choisir un risque</option>
+                                            </select>
+                                        </td>
+                                        <td id="check" colspan="5">
+                                            <div id="checked"><i class="fa-solid fa-check"></i></div>
+                                            <div id="unchecked"><i class="fa-solid fa-xmark"></i></div>
+                                        </td>
+                                    </tr>
+                                    <tr class="four">
+                                        <td>
+                                            <div class="addRisk2">
+                                                <i class="fa-solid fa-plus"></i>
+                                                <div>Nouveaux risques</div>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                </table>
+                                <div class="riskNb">1 risque</div>
+                            </div>
+                        </div>
+                </div>
+                <div class="validate_button">
+                    <button type="button" id="annuler">Annuler </button>
+                    <button id="valider">Valider</button>
+                </div>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
