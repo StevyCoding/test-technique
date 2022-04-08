@@ -13,6 +13,8 @@ $(document).ready(function(){
     });
     $("#newContent").hide();
     $("#advForm").hide();
+    $("#overlay").hide();
+
     
 
     $("#new").click(function(){
@@ -24,15 +26,20 @@ $(document).ready(function(){
     $("#newSprint").click(function(){
 
         $("#modal").css("display","block");
+        $("#overlay").show();
 
     })
 
     $("#close").click(function(){
         $("#modal").css("display","none");
+        $("#overlay").hide();
+
     })
 
     $("#annuler").click(function(){
         $("#modal").css("display","none");
+        $("#overlay").hide();
+
     })
     
     $("#addRiskBtn").click(function(){

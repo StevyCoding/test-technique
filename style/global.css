@@ -1072,7 +1072,7 @@ padding-right:14px;
   position: absolute;
   left: 50%;
   top: 50%;
-  z-index: 1;
+  z-index: 15;
   transform: translate(-50%, -50%);
   min-width: 1003px;
   min-height: 514px;
@@ -1510,4 +1510,15 @@ padding-right:14px;
   /* identical to box height */
   align-items: center;
   color: #3d0075;
+}
+#overlay{
+content: " ";
+  position: absolute;
+  display: flex;
+  z-index: 5;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
 }
