@@ -14,8 +14,12 @@ $(document).ready(function(){
     $("#newContent").hide();
     $("#advForm").hide();
     $("#overlay").hide();
+    $("#nav").css("width",$(window).width()-76+"px");
+    $( window ).resize(function() {
+    $("#nav").css("width",$(window).width()-76+"px");
 
-    
+      });
+
 
     $("#new").click(function(){
         $("#newContent").toggle();

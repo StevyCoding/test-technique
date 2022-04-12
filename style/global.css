@@ -398,30 +398,34 @@ input[type="number"] {
 
 /*************************************Navabar design**********************************************/
 
-.wrapper {
-  margin-left: 74px;
+
+#nav{
+  position:sticky;
+z-index: -1;
   width: 1800px;
   height: 124px;
+  margin-left: 60px;
   box-shadow: 0px 6px 20px rgba(74, 0, 143, 0.1);
 }
-
 .topNav {
   height: 74px;
   width: 100%;
+}
 
-  display: flex;
-  align-items: center;
-}
 .topNav > .right {
-  margin-left: 45.5%;
-  display: flex;
-  align-items: center;
+  float: right;
+  margin-top: 15px;
 }
-.topNav > .right > button {
+.topNav > .right  .l {
+  display:inline;
+  vertical-align:middle;
   margin: 0 5px;
 }
 .topNav > .left {
-  margin-left: 3%;
+  float: left;
+  margin-left: 70px;
+  margin-top: 25px;
+
 }
 
 /**** nav du bas ******/
@@ -429,14 +433,20 @@ input[type="number"] {
   height: 50px;
   width: 100%;
   border-top: 1px solid rgba(216, 204, 227, 0.5);
-  display: flex;
   align-items: center;
   font-size: 14px;
+  padding-top:10px;
+
 }
 
-.bottomNav > .left {
-  margin-left: 3%;
+.bottomNav >  *{
+  display: inline-block;
 }
+.bottomNav > .left{
+  margin-left: 70px;
+
+}
+
 .bottomNav > .left .fa-circle {
   margin-right: 7px;
   font-size: 5px;
@@ -446,7 +456,7 @@ input[type="number"] {
   margin-right: 8px;
 }
 .bottomNav .right {
-  margin-left: 15.2%;
+  float: right;
 }
 .bottomNav .plus {
   color: #b199c8;
@@ -517,7 +527,7 @@ input[type="number"] {
   margin-right: auto;
 }
 .leftNav .middle {
-  margin-top: 85px;
+  margin-top: 30px;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -1112,6 +1122,7 @@ padding-right:14px;
   text-align: center;
   color: #6302bc;
 }
+
 #modal .leftForm .l {
   display: block;
 }
@@ -1219,8 +1230,8 @@ padding-right:14px;
   margin-bottom: 17px;
 }
 #modal .separator {
-  margin-left: 35px;
-  margin-right: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
   height: 240px;
   border: 1px solid rgba(216, 204, 227, 0.5);
 }
@@ -1264,12 +1275,19 @@ padding-right:14px;
     ),
     linear-gradient(294.33deg, #6703b7 -50.97%, #aa11af 84.43%);
 }
+#modal .leftForm #dure{
+  width:200px;
+  background: #FFFFFF;
+border: 1px solid  rgba(99, 2, 188, 0.2);
+border-radius: 25px;
+}
 #modal #dureeType {
+  z-index: 2;
+
   background: #f9f7fb;
   border: 1px solid #e0ccf2;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
-  width: 100px;
   height: 22px;
   position: absolute;
   margin-left: 110px;
@@ -1521,4 +1539,37 @@ content: " ";
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.5);
+}
+
+/*****Responsivité***********************/
+@media all and (max-width: 1416px) {
+
+  .productBacklog{
+    margin-top:10px;
+    position:static;
+    margin-left: 84px;;
+  }
+ .sprintPlanning{
+  margin-top:10px;
+  position:static;
+  display:block;
+
+   margin-left: 84px;
+  }
+}
+
+@media all and (max-height: 890px){
+ .leftNav i{
+   margin-bottom: -10px;
+ }
+}
+#modal  .leftForm{
+  display: inline-block;
+
+}
+
+#modal  .rightForm{
+  max-width:100%;
+  display: inline-block;
+  float: right;
 }
